@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>DROPZONE | Smart Parcel Management</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+<div class="app">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+
+        <div class="brand">
+            <div class="brand-logo">
+                <i class="fa-solid fa-box-open"></i>
+            </div>
+            <div>
+                <h2>dropzone<span>.</span></h2>
+                <small>SMART LIVING SYSTEM</small>
+            </div>
+        </div>
+
+        <div class="sidebar-label">WORKSPACE</div>
+
+        <nav class="navigation">
+            <a href="#overview" class="nav-item active">
+                <i class="fa-solid fa-border-all"></i>
+                <span>Dashboard</span>
+            </a>
+
+            <a href="#parcels" class="nav-item">
+                <i class="fa-solid fa-box"></i>
+                <span>My Parcels</span>
+                <span class="nav-count">08</span>
+            </a>
+
+            <a href="#access" class="nav-item">
+                <i class="fa-solid fa-key"></i>
+                <span>Access Management</span>
+            </a>
+
+            <a href="#sensors" class="nav-item">
+                <i class="fa-solid fa-tower-broadcast"></i>
+                <span>Device Monitoring</span>
+            </a>
+
+            <a href="#security" class="nav-item">
+                <i class="fa-solid fa-shield-halved"></i>
+                <span>Security Centre</span>
+            </a>
+        </nav>
+
+        <div class="sidebar-label second-label">PREFERENCES</div>
+
+        <nav class="navigation">
+            <a href="#settings" class="nav-item">
+                <i class="fa-solid fa-sliders"></i>
+                <span>Settings</span>
+            </a>
+
+            <a href="mailto:support@example.com" class="nav-item">
+                <i class="fa-regular fa-circle-question"></i>
+                <span>Help & Support</span>
+            </a>
+        </nav>
+
+        <div class="sidebar-spacer"></div>
+
+        <div class="upgrade-card">
+            <div class="upgrade-art">
+                <i class="fa-solid fa-house-lock"></i>
+            </div>
+            <h4>Your home, protected.</h4>
+            <p>Smart technology for a worry-free delivery experience.</p>
+            <span>SECURE BY DESIGN <i class="fa-solid fa-arrow-right"></i></span>
+        </div>
+
+        <div class="user-profile">
+            <div class="user-avatar">V</div>
+            <div class="user-info">
+                <strong>Home Owner</strong>
+                <small>Personal Account</small>
+            </div>
+            <i class="fa-solid fa-ellipsis"></i>
+        </div>
+
+    </aside>
+
+
+    <!-- MAIN -->
+    <main class="main" id="overview">
+
+        <!-- HEADER -->
+        <header class="topbar">
+
+            <div class="breadcrumb">
+                <span>Workspace</span>
+                <i class="fa-solid fa-chevron-right"></i>
+                <strong>Overview</strong>
+            </div>
+
+            <div class="topbar-right">
+
+                <div class="connection">
+                    <span class="online-dot"></span>
+                    Device connected
+                </div>
+
+                <button class="notification-button" aria-label="Notifications">
+                    <i class="fa-regular fa-bell"></i>
+                    <span class="notification-indicator"></span>
+                </button>
+
+                <div class="top-user">V</div>
+
+            </div>
+
+        </header>
+
+
+        <!-- GREETING -->
+        <section class="greeting">
+
+            <div>
+                <span class="date-label">
+                    <i class="fa-regular fa-calendar"></i>
+                    YOUR PERSONAL DELIVERY SPACE
+                </span>
+
+                <h1>Good afternoon, <span>Vrinda.</span></h1>
+
+                <p>Your home is ready for its next delivery.
+                   Here's your smart parcel overview.</p>
+            </div>
+
+            <div class="greeting-date">
+                <div class="date-icon">
+                    <i class="fa-regular fa-calendar-check"></i>
+                </div>
+                <div>
+                    <strong>02 November 2026</strong>
+                    <small>Monday · Your dashboard</small>
+                </div>
+            </div>
+
+        </section>
+
+
+        <!-- HERO -->
+        <section class="hero">
+
+            <div class="hero-text">
+
+                <span class="hero-tag">
+                    <span class="online-dot"></span>
+                    YOUR SMART HOME COMPANION
+                </span>
+
+                <h2>Every delivery.<br>
+                    <em>Safely received.</em></h2>
+
+                <p>
+                    Never worry about missed deliveries again.
+                    Your smart parcel box keeps every package
+                    safe, even when you're away.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#access" class="primary-button">
+                        Manage Access <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                    <a href="#parcels" class="secondary-button">
+                        View Deliveries
+                    </a>
+                </div>
+
+                <div class="hero-features">
+                    <span><i class="fa-solid fa-shield-heart"></i> Secure Storage</span>
+                    <span><i class="fa-solid fa-wifi"></i> IoT Connected</span>
+                    <span><i class="fa-solid fa-clock"></i> 24/7 Monitoring</span>
+                </div>
+
+            </div>
+
+            <!-- CSS PARCEL BOX ILLUSTRATION -->
+            <div class="hero-visual">
+
+                <div class="decor-circle circle-one"></div>
+                <div class="decor-circle circle-two"></div>
+
+                <div class="floating-label label-top">
+                    <i class="fa-solid fa-shield-halved"></i>
+                    <div>
+                        <strong>Protected</strong>
+                        <small>Your parcels are safe</small>
+                    </div>
+                </div>
+
+                <div class="parcel-illustration">
+                    <div class="parcel-top"></div>
+                    <div class="parcel-body">
+                        <div class="parcel-line"></div>
+                        <div class="parcel-lock">
+                            <i class="fa-solid fa-lock"></i>
+                        </div>
+                        <div class="parcel-light"></div>
+                        <div class="parcel-brand">DZ</div>
+                    </div>
+                    <div class="parcel-base"></div>
+                </div>
+
+                <div class="floating-label label-bottom">
+                    <span class="online-dot"></span>
+                    <div>
+                        <strong>System Active</strong>
+                        <small>All sensors operational</small>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- STATS -->
+        <section class="stats">
+
+            <div class="stat-card">
+                <div class="stat-top">
+                    <div class="stat-icon lavender-icon">
+                        <i class="fa-solid fa-boxes-stacked"></i>
+                    </div>
+                    <span class="stat-period">ALL TIME</span>
+                </div>
+                <h2>128</h2>
+                <p>Total Parcels Received</p>
+                <div class="stat-bottom">
+                    <span class="stat-positive"><i class="fa-solid fa-arrow-up"></i> 12%</span>
+                    <span>vs last month</span>
+                </div>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-top">
+                    <div class="stat-icon sage-icon">
+                        <i class="fa-solid fa-box-circle-check"></i>
+                    </div>
+                    <span class="stat-period">COMPLETED</span>
+                </div>
+                <h2>116</h2>
+                <p>Successfully Delivered</p>
+                <div class="stat-bottom">
+                    <span class="stat-positive">90.6%</span>
+                    <span>delivery success</span>
+                </div>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-top">
+                    <div class="stat-icon peach-icon">
+                        <i class="fa-solid fa-box-open"></i>
+                    </div>
+                    <span class="stat-period">IN THE BOX</span>
+                </div>
+                <h2>08</h2>
+                <p>Awaiting Collection</p>
+                <div class="stat-bottom">
+                    <span class="stat-warning">Action needed</span>
+                    <span>Pick up parcels</span>
+                </div>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-top">
+                    <div class="stat-icon plum-icon">
+                        <i class="fa-solid fa-shield-halved"></i>
+                    </div>
+                    <span class="stat-period">PROTECTION</span>
+                </div>
+                <h2 class="safe-heading">Secure</h2>
+                <p>Security Overview</p>
+                <div class="stat-bottom">
+                    <span class="stat-positive">● Active</span>
+                    <span>No threats detected</span>
+                </div>
+            </div>
+
+        </section>
+
+
+        <!-- CONTROL AREA -->
+        <section class="main-grid">
+
+            <!-- SMART LOCK -->
+            <div class="card lock-card" id="access">
+
+                <div class="section-heading">
+                    <div>
+                        <span class="section-kicker">DEVICE CONTROL</span>
+                        <h3>Smart Lock Access</h3>
+                        <p>Control your parcel box from anywhere.</p>
+                    </div>
+
+                    <span class="status-pill">
+                        <span class="online-dot"></span> SECURE
+                    </span>
+                </div>
+
+                <div class="lock-content">
+
+                    <div class="lock-graphic">
+                        <div class="lock-ring">
+                            <div class="lock-inner">
+                                <i class="fa-solid fa-lock"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h2>Box is Locked</h2>
+                    <p>Your deliveries are safely stored inside.</p>
+
+                    <div class="lock-info">
+                        <div>
+                            <span>LOCK STATUS</span>
+                            <strong>Engaged</strong>
+                        </div>
+                        <div>
+                            <span>LAST ACTIVITY</span>
+                            <strong>11:30 AM</strong>
+                        </div>
+                    </div>
+
+                    <div class="lock-actions">
+                        <button class="unlock-button">
+                            <i class="fa-solid fa-lock-open"></i>
+                            Unlock Box
+                        </button>
+                        <button class="lock-button">
+                            <i class="fa-solid fa-lock"></i>
+                            Lock Box
+                        </button>
+                    </div>
+
+                    <div class="auth-note">
+                        <i class="fa-solid fa-circle-info"></i>
+                        Secure authentication is required for remote access.
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- OTP -->
+            <div class="card otp-card">
+
+                <div class="section-heading">
+                    <div>
+                        <span class="section-kicker">GUEST ACCESS</span>
+                        <h3>Delivery Partner Access</h3>
+                        <p>Give delivery partners secure temporary access.</p>
+                    </div>
+
+                    <div class="otp-heading-icon">
+                        <i class="fa-solid fa-key"></i>
+                    </div>
+                </div>
+
+                <div class="otp-art">
+                    <div class="otp-circle">
+                        <i class="fa-solid fa-shield-halved"></i>
+                    </div>
+                    <span class="otp-star star-one">✦</span>
+                    <span class="otp-star star-two">✧</span>
+                </div>
+
+                <h2>One-time access code</h2>
+                <p class="otp-description">
+                    Generate a unique OTP for a delivery partner.
+                    The code can be used only once.
+                </p>
+
+                <div class="otp-code">
+                    <span>YOUR SECURE CODE</span>
+                    <strong>• • • • • •</strong>
+                    <small>Code will appear here after generation</small>
+                </div>
+
+                <button class="otp-button">
+                    <i class="fa-solid fa-wand-magic-sparkles"></i>
+                    Generate New OTP
+                </button>
+
+                <div class="otp-foot">
+                    <span><i class="fa-regular fa-clock"></i> Temporary access</span>
+                    <span><i class="fa-solid fa-shield"></i> One-time use</span>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- SENSOR SECTION -->
+        <section class="card sensor-section" id="sensors">
+
+            <div class="section-heading">
+                <div>
+                    <span class="section-kicker">HARDWARE HEALTH</span>
+                    <h3>Live Device Monitoring</h3>
+                    <p>Keep track of your smart box sensors and components.</p>
+                </div>
+
+                <div class="device-status">
+                    <span class="online-dot"></span>
+                    ALL SYSTEMS NORMAL
+                </div>
+            </div>
+
+            <div class="sensor-grid">
+
+                <div class="sensor-item">
+                    <div class="sensor-symbol lavender-icon">
+                        <i class="fa-solid fa-door-closed"></i>
+                    </div>
+                    <div class="sensor-detail">
+                        <span>DOOR SENSOR</span>
+                        <h4>Door Closed</h4>
+                        <small>Lock mechanism safe</small>
+                    </div>
+                    <span class="sensor-check"><i class="fa-solid fa-check"></i></span>
+                </div>
+
+                <div class="sensor-item">
+                    <div class="sensor-symbol peach-icon">
+                        <i class="fa-solid fa-wave-square"></i>
+                    </div>
+                    <div class="sensor-detail">
+                        <span>ULTRASONIC</span>
+                        <h4>24 cm</h4>
+                        <small>Distance reading</small>
+                    </div>
+                    <span class="sensor-check"><i class="fa-solid fa-check"></i></span>
+                </div>
+
+                <div class="sensor-item">
+                    <div class="sensor-symbol sage-icon">
+                        <i class="fa-solid fa-eye"></i>
+                    </div>
+                    <div class="sensor-detail">
+                        <span>IR SENSOR</span>
+                        <h4>Parcel Detected</h4>
+                        <small>Object detection active</small>
+                    </div>
+                    <span class="sensor-check"><i class="fa-solid fa-check"></i></span>
+                </div>
+
+                <div class="sensor-item">
+                    <div class="sensor-symbol plum-icon">
+                        <i class="fa-solid fa-person-walking"></i>
+                    </div>
+                    <div class="sensor-detail">
+                        <span>PIR SENSOR</span>
+                        <h4>No Motion</h4>
+                        <small>Area monitored</small>
+                    </div>
+                    <span class="sensor-check"><i class="fa-solid fa-check"></i></span>
+                </div>
+
+            </div>
+
+            <div class="sensor-footer">
+                <span><i class="fa-solid fa-microchip"></i> Device: DZ-SMART-001</span>
+                <span>Last synced: 11:32 AM</span>
+            </div>
+
+        </section>
+
+
+        <!-- BOTTOM CONTENT -->
+        <section class="bottom-grid">
+
+            <!-- PARCEL HISTORY -->
+            <div class="card history-card" id="parcels">
+
+                <div class="section-heading">
+                    <div>
+                        <span class="section-kicker">YOUR DELIVERIES</span>
+                        <h3>Recent Parcel Activity</h3>
+                        <p>A quick look at your recent deliveries.</p>
+                    </div>
+
+                    <a href="#parcels" class="text-link">
+                        View all <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <div class="parcel-list">
+
+                    <div class="parcel-row">
+                        <div class="partner-logo amazon">a</div>
+                        <div class="parcel-info">
+                            <strong>Amazon Delivery</strong>
+                            <small>#DZ1028 · 02 Nov 2026</small>
+                        </div>
+                        <span class="parcel-status delivered">Delivered</span>
+                    </div>
+
+                    <div class="parcel-row">
+                        <div class="partner-logo flipkart">
+                            <i class="fa-solid fa-box"></i>
+                        </div>
+                        <div class="parcel-info">
+                            <strong>Flipkart Delivery</strong>
+                            <small>#DZ1027 · 01 Nov 2026</small>
+                        </div>
+                        <span class="parcel-status pending">Awaiting Pickup</span>
+                    </div>
+
+                    <div class="parcel-row">
+                        <div class="partner-logo bluedart">B</div>
+                        <div class="parcel-info">
+                            <strong>Blue Dart Delivery</strong>
+                            <small>#DZ1026 · 31 Oct 2026</small>
+                        </div>
+                        <span class="parcel-status delivered">Delivered</span>
+                    </div>
+
+                    <div class="parcel-row">
+                        <div class="partner-logo meesho">M</div>
+                        <div class="parcel-info">
+                            <strong>Meesho Delivery</strong>
+                            <small>#DZ1025 · 29 Oct 2026</small>
+                        </div>
+                        <span class="parcel-status collected">Collected</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- SECURITY TIMELINE -->
+            <div class="card activity-card" id="security">
+
+                <div class="section-heading">
+                    <div>
+                        <span class="section-kicker">SYSTEM HISTORY</span>
+                        <h3>Security Timeline</h3>
+                        <p>Recent activity from your device.</p>
+                    </div>
+                </div>
+
+                <div class="timeline">
+
+                    <div class="timeline-item">
+                        <div class="timeline-icon sage-icon">
+                            <i class="fa-solid fa-box"></i>
+                        </div>
+                        <div>
+                            <strong>Parcel received</strong>
+                            <p>Amazon package safely stored.</p>
+                            <small>Today · 11:30 AM</small>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-icon lavender-icon">
+                            <i class="fa-solid fa-key"></i>
+                        </div>
+                        <div>
+                            <strong>Access code generated</strong>
+                            <p>Temporary access created.</p>
+                            <small>Today · 10:45 AM</small>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-icon peach-icon">
+                            <i class="fa-solid fa-lock"></i>
+                        </div>
+                        <div>
+                            <strong>Box automatically locked</strong>
+                            <p>Security mechanism activated.</p>
+                            <small>Yesterday · 06:20 PM</small>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-icon plum-icon">
+                            <i class="fa-solid fa-wifi"></i>
+                        </div>
+                        <div>
+                            <strong>Device connected</strong>
+                            <p>IoT connection established.</p>
+                            <small>Yesterday · 09:00 AM</small>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- FOOTER -->
+        <footer class="footer">
+            <div class="footer-brand">
+                <i class="fa-solid fa-box-open"></i>
+                DROPZONE<span>.</span>
+            </div>
+
+            <p>Designed for safer, smarter deliveries.</p>
+
+            <div class="footer-status">
+                <span class="online-dot"></span> System operational
+            </div>
+        </footer>
+
+    </main>
+
+</div>
+
+</body>
+</html>
